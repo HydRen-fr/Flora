@@ -8,7 +8,7 @@ Clickable countries :
 
 ## Thanks
 
-This project would've been a lot harder without https://github.com/shubhexists/react-maps, https://github.com/desklib/react-flashcards.
+This project would've been a lot harder without https://github.com/shubhexists/react-maps and https://github.com/desklib/react-flashcards.
 
 ## License
 
