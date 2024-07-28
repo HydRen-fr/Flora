@@ -6,6 +6,10 @@ I am slowly increasing the number of flashcards available, day by day, please be
 Clickable countries :
 - France
 
+## Thanks
+
+This project would've been a lot harder without https://github.com/shubhexists/react-maps, https://github.com/desklib/react-flashcards.
+
 ## License
 
 Flora is distributed under the **free license GPL v3+**. Please see the LICENSE file for more information.
