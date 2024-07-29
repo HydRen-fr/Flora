@@ -15,10 +15,10 @@ const WorldMap = () => {
       <World
         onSelect={handleCountrySelect}
         type="select-single"
-        size={1050}
+        size={1100}
         mapColor="lightgrey"
         strokeColor="black"
-        strokeWidth={1.5}
+        strokeWidth={0.8}
         hoverColor="lightgreen"
         selectColor="orange"
         hints={true}
