@@ -559,8 +559,6 @@ const CountryPage = () => {
 
   return (
     <div>
-      <h1>Country: {countryCode}</h1>
-      &nbsp;
       {countryCode === "France" && (
         <div>
           <h2>🏔️ Alpes ⛰️</h2>
