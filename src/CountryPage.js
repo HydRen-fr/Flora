@@ -258,7 +258,7 @@ const fr_alpes = [
     id: 18,
     front: (
       <img
-        src="/images/france/alpes/grand_astrance.png"
+        src="/images/france/alpes/grande_astrance.png"
         alt="Grande astrance"
       />
     ),
