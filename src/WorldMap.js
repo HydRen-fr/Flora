@@ -12,21 +12,20 @@ const WorldMap = () => {
 
   return (
     <div>
-      <h1>World Map</h1>
       <World
         onSelect={handleCountrySelect}
         type="select-single"
-        size={800}
+        size={1100}
         mapColor="lightgrey"
         strokeColor="black"
-        strokeWidth={1}
+        strokeWidth={1.5}
         hoverColor="lightgreen"
         selectColor="orange"
         hints={true}
         hintTextColor="white"
         hintBackgroundColor="black"
         hintPadding="5px"
-        hintBorderRadius="5px"
+        hintBorderRadius="10px"
       />
     </div>
   );
