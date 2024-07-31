@@ -554,6 +554,136 @@ const fr_bretagne = [
   },
 ];
 
+const canada = [
+  {
+      id: 1,
+      front: <img src="/images/canada/alstroemeria-pink.jpg" alt="Alstroemeria" />,
+      back: `
+      - **Common Name** : Alstroemeria
+      - **Scientific Name** : *Alstroemeria spp.*
+      - **Toxic** : No
+      - **Fun Fact** : Alstroemeria, also known as the Peruvian lily, symbolizes friendship and devotion in the language of flowers.
+          `,
+      showBookMark: false,
+      showTextToSpeech: false,
+  },
+  {
+    id: 2,
+    front: <img src="/images/canada/babiesbreath.jpg" alt="Baby's Breath" />,
+    back: `
+    - **Common Name** : Baby's Breath
+    - **Scientific Name** : *Gypsophila spp.*
+    - **Toxic** : No
+    - **Fun Fact** : Baby's breath is often used as a filler in bouquets, providing a delicate, airy appearance.
+        `,
+    showBookMark: false,
+    showTextToSpeech: false,
+},
+  {
+    id: 3,
+    front: <img src="/images/canada/chrysanthemum-yellow.jpg" alt="Chrysanthemum" />,
+    back: `
+    - **Common Name** : Chrysanthemum
+    - **Scientific Name** : *Chrysanthemum spp.*
+    - **Toxic** : Yes (can cause skin irritation and is toxic if ingested by pets)
+    - **Fun Fact** : Chrysanthemums are one of the most popular flowers in the world and are a symbol of autumn in many cultures.
+        `,
+    showBookMark: false,
+    showTextToSpeech: false,
+},
+  {
+    id: 4,
+    front: <img src="/images/canada/gerbera-daisy-salmon.jpg" alt="Gerbera Daisy" />,
+    back: `
+    - **Common Name** : Gerbera Daisy
+    - **Scientific Name** : *Gerbera jamesonii*
+    - **Toxic** : No
+    - **Fun Fact** : Gerbera daisies are known for their bright, cheerful blooms and are often used to convey happiness and joy.
+        `,
+    showBookMark: false,
+    showTextToSpeech: false,
+},
+  {
+    id: 5,
+    front: <img src="/images/canada/gladiola-red.jpg" alt="Gladiola" />,
+    back: `
+    - **Common Name** : Gladiola
+    - **Scientific Name** : *Gladiolus spp.*
+    - **Toxic** : Yes (can cause allergic reactions and gastrointestinal issues if ingested)
+    - **Fun Fact** : Gladiolas are often associated with strength of character and are commonly used in floral arrangements for formal events.
+        `,
+    showBookMark: false,
+    showTextToSpeech: false,
+},
+  {
+    id: 6,
+    front: <img src="/images/canada/liatris-purple.jpg" alt="Liatris" />,
+    back: `
+    - **Common Name** : Liatris
+    - **Scientific Name** : *Liatris spicata*
+    - **Toxic** : No
+    - **Fun Fact** : Liatris, also known as blazing star, is popular for its tall spikes of purple flowers that attract butterflies and other pollinators.
+        `,
+    showBookMark: false,
+    showTextToSpeech: false,
+},
+  {
+    id: 7,
+    front: <img src="/images/canada/lily-white.jpg" alt="Lily" />,
+    back: `
+    - **Common Name** : Lily
+    - **Scientific Name** : *Lilium spp.*
+    - **Toxic** : Yes (highly toxic to cats, can cause kidney failure)
+    - **Fun Fact** : Lilies are often associated with purity and refined beauty, making them a popular choice for weddings and funerals.
+        `,
+    showBookMark: false,
+    showTextToSpeech: false,
+},
+  {
+    id: 8,
+    front: <img src="/images/canada/lisianthus-pink.jpg" alt="Lisianthus" />,
+    back: `
+    - **Common Name** : Lisianthus
+    - **Scientific Name** : *Eustoma grandiflorum*
+    - **Toxic** : No
+    - **Fun Fact** : Lisianthus flowers are known for their long vase life, often lasting up to two weeks when cut.
+        `,
+    showBookMark: false,
+    showTextToSpeech: false,
+},
+  {
+    id: 9,
+    front: <img src="/images/canada/matsumoto-aster-red.jpg" alt="Matsumoto Aster" />,
+    back: `
+    - **Common Name** : Matsumoto Aster
+    - **Scientific Name** : *Callistephus chinensis*
+    - **Toxic** : No
+    - **Fun Fact** : Matsumoto asters are prized for their sturdy stems and vibrant colors, making them a favorite in cut flower arrangements.
+        `,
+    showBookMark: false,
+    showTextToSpeech: false,
+},
+  {
+    id: 10,
+    front: <img src="/images/canada/snapdragon-yellow.jpg" alt="Snapdragon" />,
+    back: `
+    - **Common Name** : Snapdragon
+    - **Scientific Name** : *Antirrhinum majus*
+    - **Toxic** : No
+    - **Fun Fact** : Snapdragons are named for their dragon-like appearance and the way the flowers "snap" open when squeezed.
+        `,
+    showBookMark: false,
+    showTextToSpeech: false,
+},
+  {
+    id: 11,
+    front: <p style={{ fontSize: "25px" }}>Continue comme ça !</p>,
+    back: <p style={{ fontSize: "25px" }}>(✿◠‿◠)</p>,
+    showBookMark: false,
+    showTextToSpeech: false,
+  },
+];
+
 const CountryPage = () => {
   const { countryCode } = useParams();
 
@@ -574,6 +704,18 @@ const CountryPage = () => {
           <h2>🌊 Bretagne ☔</h2>
           <FlashCardArray
             cards={fr_bretagne}
+            width="600px"
+            backContentStyle={{
+              fontSize: "22px",
+            }}
+            isMarkdown={true}
+          />
+        </div>
+      )}
+        {countryCode === "Canada" && (
+        <div>
+          <FlashCardArray
+            cards={canada}
             width="600px"
             backContentStyle={{
               fontSize: "22px",
