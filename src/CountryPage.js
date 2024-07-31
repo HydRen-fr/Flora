@@ -684,6 +684,100 @@ const canada = [
   },
 ];
 
+const russia = [
+  {
+    id: 1,
+    front: <img src="/images/russia/Biebersteins-Crocus.jpg" alt="Bieberstein's Crocus" />,
+    back: `
+    - **Common Name** : Bieberstein's Crocus
+    - **Scientific Name** : *Crocus speciosus*
+    - **Toxic** : No
+    - **Fun Fact** : Bieberstein's Crocus is known for its striking purple flowers that often bloom in the fall, adding vibrant color to autumn gardens.
+        `,
+    showBookMark: false,
+    showTextToSpeech: false,
+},
+  {
+    id: 2,
+    front: <img src="/images/russia/Golden-Root.jpg" alt="Golden Root" />,
+    back: `
+    - **Common Name** : Golden Root
+    - **Scientific Name** : *Rhodiola rosea*
+    - **Toxic** : No
+    - **Fun Fact** : Golden Root is valued for its adaptogenic properties and has been used in traditional medicine to combat stress and fatigue.
+        `,
+    showBookMark: false,
+    showTextToSpeech: false,
+},
+  {
+    id: 3,
+    front: <img src="/images/russia/Pansy-Viola-Incisa.jpg" alt="Pansy" />,
+    back: `
+    - **Common Name** : Pansy
+    - **Scientific Name** : *Viola tricolor*
+    - **Toxic** : No
+    - **Fun Fact** : Pansies are often used in gardening for their colorful blooms and are edible, making a beautiful addition to salads and desserts.
+        `,
+    showBookMark: false,
+    showTextToSpeech: false,
+},
+  {
+    id: 4,
+    front: <img src="/images/russia/Pink-Royal-Azalea-on-Thursd.jpg" alt="Royal Azalea" />,
+    back: `
+    - **Common Name** : Royal Azalea
+    - **Scientific Name** : *Rhododendron schlippenbachii*
+    - **Toxic** : Yes (can cause gastrointestinal distress if ingested)
+    - **Fun Fact** : The Royal Azalea is celebrated in Korea, where its blooms signal the arrival of spring and are featured in cultural festivals.
+        `,
+    showBookMark: false,
+    showTextToSpeech: false,
+},
+  {
+    id: 5,
+    front: <img src="/images/russia/Sacred-Lotus.jpg" alt="Sacred Lotus" />,
+    back: `
+    - **Common Name** : Sacred Lotus
+    - **Scientific Name** : *Nelumbo nucifera*
+    - **Toxic** : No
+    - **Fun Fact** : The Sacred Lotus is a symbol of purity and enlightenment in many cultures and can be found in ponds and water gardens around the world.
+        `,
+    showBookMark: false,
+    showTextToSpeech: false,
+},
+  {
+    id: 6,
+    front: <img src="/images/russia/Siberian-Fawn-Lily.jpg" alt="Siberian Fawn Lily" />,
+    back: `
+    - **Common Name** : Siberian Fawn Lily
+    - **Scientific Name** : *Erythronium sibiricum*
+    - **Toxic** : No
+    - **Fun Fact** : The Siberian Fawn Lily is admired for its delicate, nodding flowers that appear early in the spring, often while snow is still on the ground.
+        `,
+    showBookMark: false,
+    showTextToSpeech: false,
+},
+  {
+    id: 7,
+    front: <img src="/images/russia/The-Fern-Leaf-Peony.jpg" alt="Fern Leaf Peony" />,
+    back: `
+    - **Common Name** : Fern Leaf Peony
+    - **Scientific Name** : *Paeonia tenuifolia*
+    - **Toxic** : No
+    - **Fun Fact** : The Fern Leaf Peony is known for its finely divided, fern-like foliage and vibrant red flowers, making it a standout in any garden.
+        `,
+    showBookMark: false,
+    showTextToSpeech: false,
+},
+  {
+    id: 8,
+    front: <p style={{ fontSize: "25px" }}>Continue comme ça !</p>,
+    back: <p style={{ fontSize: "25px" }}>(✿◠‿◠)</p>,
+    showBookMark: false,
+    showTextToSpeech: false,
+  },
+];
+
 const CountryPage = () => {
   const { countryCode } = useParams();
 
@@ -716,6 +810,18 @@ const CountryPage = () => {
         <div>
           <FlashCardArray
             cards={canada}
+            width="600px"
+            backContentStyle={{
+              fontSize: "22px",
+            }}
+            isMarkdown={true}
+          />
+        </div>
+      )}
+        {countryCode === "Russia" && (
+        <div>
+          <FlashCardArray
+            cards={russia}
             width="600px"
             backContentStyle={{
               fontSize: "22px",
