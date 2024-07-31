@@ -5,6 +5,8 @@ I am slowly increasing the number of flashcards available, day by day, please be
 
 Clickable countries :
 - France
+- Canada
+- Russia
 
 ## Thanks
 
